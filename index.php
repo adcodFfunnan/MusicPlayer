@@ -410,7 +410,7 @@
                $pasword=  test_input($_POST['SingUpPasword']);
                $database_for_create.=$pasword;
          
-               $con=mysqli_connect("fdb20.awardspace.net","3361977_users","753159Ad","3361977_users");
+               $con=mysqli_connect("fdb20.awardspace.net","3361977_users","****","3361977_users");
        
                $sql="CREATE TABLE $database_for_create(id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,youtube_link TEXT,name_of_the_song TEXT)DEFAULT CHARACTER SET utf8 ENGINE=InnoDB";
                $create_table=mysqli_query($con,$sql);
